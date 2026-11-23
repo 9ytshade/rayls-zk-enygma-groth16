@@ -58,17 +58,23 @@ Rayls Enygma implements confidential asset transfers and atomic DvP settlements 
    - `PaymentCircuit (2-in, 2-out)`: **7,440 constraints** (11 public inputs, 31 secret witnesses, Merkle depth 8).
 
 2. **Client-Side Prover Performance (Physical Consumer CPU, N=50 Runs):**
-   - Proving completes in **115.52ms to 415.35ms median** on dual-core hardware (Intel Core i3-3110M @ 2.40 GHz).
+   - Proving completes in **115.52ms to 415.35ms median** on dual-core hardware (Intel Core i3-3110M @ 2.40 GHz):
+     - `PrivateMint`: **115.52ms median** (p95: 217.31ms, proving key: 145 KB)
+     - `DvPDestination`: **404.55ms median** (p95: 583.16ms, proving key: 640 KB)
+     - `DvPInitiator`: **415.35ms median** (p95: 717.33ms, proving key: 679 KB)
    - Worst-case 95th percentile proving is **717.33ms** on the heaviest circuit (`DvPInitiator`), strictly fulfilling the $\le 1,000\text{ms}$ RTGS wholesale banking threshold with a **28.3% safety margin** without GPUs.
    - Client peak heap allocation is strictly **4.36 MB to 11.56 MB**, enabling lightweight browser and microservice deployment.
 
 3. **EVM Verification Gas & Precompile Overhead:**
-   - Groth16 verification requires **181,138 gas base** (4-pairing evaluation via precompile 8) plus linear combination accumulation gas.
+   - Groth16 verification requires **181,138 gas base** (4-pairing evaluation via precompile 8) plus linear combination accumulation gas:
+     - Precompile 6 (`ecAdd`): **279 gas**
+     - Precompile 7 (`ecMul`): **6,129 gas**
+     - Precompile 8 (`ecPairing`): **181,138 gas**
    - Solidity memory packing and staticcall dispatch add $+13,749$ to $+19,689$ gas wrapper overhead.
    - Measured live fork execution on Rayls Public Chain (Chain ID 72957):
-     - `PrivateMint`: **219,199 gas** (0.01262 RLS at 57.60 Gwei)
-     - `DvPDestination`: **234,468 gas** (0.01350 RLS)
-     - `DvPInitiator`: **249,739 gas** (0.01438 RLS, delivering a **>99.99% cost reduction** vs Ethereum L1).
+     - `PrivateMint`: **219,199 gas** (precompile: 205,450 + wrapper overhead: 13,749 gas; 0.01262 RLS at 57.60 Gwei)
+     - `DvPDestination`: **234,468 gas** (precompile: 217,750 + wrapper overhead: 16,718 gas; 0.01350 RLS)
+     - `DvPInitiator`: **249,739 gas** (precompile: 230,050 + wrapper overhead: 19,689 gas; 0.01438 RLS, delivering a **>99.99% cost reduction** vs Ethereum L1).
 
 4. **Forensic Circuit Invariants:**
    - Unconstrained Public Input Defense: `api.AssertIsDifferent(circuit.StCounterVault, 0)` in `DvPInitiatorCircuit` prevents unconstrained counterparty assignment.
@@ -99,7 +105,7 @@ All benchmarks and tests were executed on the following physical environment:
 
 To maintain strict epistemic rigor, all data and findings are classified into four decoupled domains:
 
-1. **Domain 1: Live On-Chain Telemetry (Chain ID 72957):** 1,000 consecutive blocks scanned (#15,047,066 to #15,048,065) with 999/999 parent-link validations.
+1. **Domain 1: Live On-Chain Telemetry (Chain ID 72957):** 1,000 consecutive blocks scanned (#15,047,066 to #15,048,065) with 999/999 parent-link validations (100.0% integrity). Mean block cadence is 1.3423s (median: 1.0s, p95: 2.0s, strictly within 0s to 2s). Baseline gas price: 57.60 Gwei, gas limit: 500,000,000 gas. Genesis bytecodes verified: ConsensusRegistry (21,929 bytes), FeeAggregatorProxy (122 bytes), DelegationPool (15,790 bytes).
 2. **Domain 2: Upstream Codebase Forensics:** Compiled directly from pinned commit `a9b06c00` of `raylsnetwork/Enygma`.
 3. **Domain 3: Controlled Local Invariant Testbenches:** Authored reference prototypes evaluating mathematical invariants under standard EVM rules.
 4. **Domain 4: Institutional & Regulatory Standards:** CPMI-IOSCO Principle 8, Banco Central do Brasil (BCB) Drex pilot specifications, and Brazilian Lei Complementar 105/2001.
