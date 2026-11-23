@@ -1,0 +1,45 @@
+{
+  "chain_id": 72957,
+  "fork_block_tip": 15048439,
+  "baseline_gas_price_gwei": 57.6,
+  "gas_price_wei": 57600000000,
+  "precompile_spec": {
+    "ecAdd_base_gas": 150,
+    "ecAdd_measured_direct_gas": 279,
+    "ecMul_base_gas": 6000,
+    "ecMul_measured_direct_gas": 6129,
+    "ecPairing_base_gas": 45000,
+    "ecPairing_per_point_gas": 34000,
+    "groth16_4pairing_base_gas": 181000,
+    "groth16_4pairing_measured_direct_gas": 181138
+  },
+  "measured_circuits": {
+    "PrivateMint": {
+      "public_inputs": 4,
+      "theoretical_accumulation_gas": 24450,
+      "measured_accumulation_gas": 38199,
+      "theoretical_precompile_total_gas": 205450,
+      "live_fork_measured_total_gas": 219199,
+      "wrapper_overhead_gas": 13749,
+      "native_rls_cost": 0.0126258624
+    },
+    "DvPDestination": {
+      "public_inputs": 6,
+      "theoretical_accumulation_gas": 36750,
+      "measured_accumulation_gas": 53468,
+      "theoretical_precompile_total_gas": 217750,
+      "live_fork_measured_total_gas": 234468,
+      "wrapper_overhead_gas": 16718,
+      "native_rls_cost": 0.0135053568
+    },
+    "DvPInitiator": {
+      "public_inputs": 8,
+      "theoretical_accumulation_gas": 49050,
+      "measured_accumulation_gas": 68739,
+      "theoretical_precompile_total_gas": 230050,
+      "live_fork_measured_total_gas": 249739,
+      "wrapper_overhead_gas": 19689,
+      "native_rls_cost": 0.0143849664
+    }
+  }
+}

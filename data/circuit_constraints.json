@@ -1,0 +1,37 @@
+{
+  "scan_timestamp": "2026-11-23T09:21:07Z",
+  "upstream_commit": "a9b06c00cc4076b035c2d9afd5e2ca70b7eae194",
+  "curve": "BN254",
+  "circuits": {
+    "DvPDestinationCircuit": {
+      "constraints": 3778,
+      "public_inputs": 7,
+      "secret_witnesses": 18,
+      "merkle_depth": 8
+    },
+    "DvPInitiatorCircuit": {
+      "constraints": 4077,
+      "public_inputs": 9,
+      "secret_witnesses": 19,
+      "merkle_depth": 8
+    },
+    "PaymentCircuit_1in_2out": {
+      "constraints": 4491,
+      "public_inputs": 8,
+      "secret_witnesses": 19,
+      "merkle_depth": 8
+    },
+    "PaymentCircuit_2in_2out": {
+      "constraints": 7440,
+      "public_inputs": 11,
+      "secret_witnesses": 31,
+      "merkle_depth": 8
+    },
+    "PrivateMintCircuit": {
+      "constraints": 802,
+      "public_inputs": 5,
+      "secret_witnesses": 3,
+      "merkle_depth": 0
+    }
+  }
+}

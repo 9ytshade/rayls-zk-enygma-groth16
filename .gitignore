@@ -1,0 +1,11 @@
+# Keep local foundation docs out of git per protocol rules
+docs/
+.env
+cache/
+out/
+broadcast/
+*.log
+
+# Large uncompressed video files (>50MB) and raw capture drafts
+assets/final demo.mp4
+assets/screen record.mp4

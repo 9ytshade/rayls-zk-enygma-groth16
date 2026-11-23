@@ -1,0 +1,58 @@
+{
+  "timestamp": "2026-11-23T09:39:46Z",
+  "rpc_endpoint": "https://mainnet-rpc.rayls.com",
+  "chain_id": 72957,
+  "scan_start_block": 15047066,
+  "scan_end_block": 15048065,
+  "pinned_canonical_block": 15048065,
+  "finalized_block": 15048065,
+  "pinned_block_hash": "0x54c08abfa0cbffed2cb0e08167fd15cf392064ffd9dc84cfc1610c4124ddb43e",
+  "total_blocks": 1000,
+  "consecutive_step": 1,
+  "parent_hash_verified_links": 999,
+  "mean_cadence_seconds": 1.3423,
+  "median_cadence_seconds": 1,
+  "p95_cadence_seconds": 2,
+  "min_cadence_seconds": 0,
+  "max_cadence_seconds": 2,
+  "gas_price_wei": 57600000000,
+  "baseline_gas_price_gwei": 57.6,
+  "gas_limit": 500000000,
+  "genesis_system_contracts": {
+    "ConsensusRegistry": {
+      "address": "0x07E17e17e17e17e17e17e17e17e17e17e17e17e1",
+      "bytecode_size_bytes": 21929
+    },
+    "FeeAggregatorProxy": {
+      "address": "0x07E17e17e17e17e17e17e17e17e17e17e17e17e3",
+      "bytecode_size_bytes": 122
+    },
+    "DelegationPool": {
+      "address": "0x07e17e17e17e17e17e17e17e17E17e17e17e17e9",
+      "bytecode_size_bytes": 15790
+    }
+  },
+  "zk_calldata_economics": {
+    "PrivateMint": {
+      "public_inputs_count": 4,
+      "public_input_bytes": 128,
+      "public_input_calldata_gas": 2048,
+      "total_calldata_gas": 6144,
+      "calldata_cost_rls": 0.0003538944
+    },
+    "DvPDestination": {
+      "public_inputs_count": 6,
+      "public_input_bytes": 192,
+      "public_input_calldata_gas": 3072,
+      "total_calldata_gas": 7168,
+      "calldata_cost_rls": 0.0004128768
+    },
+    "DvPInitiator": {
+      "public_inputs_count": 8,
+      "public_input_bytes": 256,
+      "public_input_calldata_gas": 4096,
+      "total_calldata_gas": 8192,
+      "calldata_cost_rls": 0.0004718592
+    }
+  }
+}

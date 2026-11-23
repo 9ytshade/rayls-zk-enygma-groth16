@@ -1,0 +1,58 @@
+{
+  "hardware": {
+    "cpu": "Intel(R) Core(TM) i3-3110M CPU @ 2.40GHz",
+    "logical_cores": 4,
+    "ram_gib": 3.8,
+    "os": "Ubuntu 24.04 LTS (WSL2)"
+  },
+  "runs_per_circuit": 50,
+  "warmup_runs": 1,
+  "execution_date": "2026-11-23T09:22:03Z",
+  "circuits": {
+    "DvPDestination": {
+      "median_solve_ms": 13.891,
+      "mean_solve_ms": 15.591099999999997,
+      "median_prove_ms": 404.551,
+      "mean_prove_ms": 436.9603399999999,
+      "p95_prove_ms": 583.164,
+      "min_prove_ms": 363.215,
+      "max_prove_ms": 736.588,
+      "std_dev_ms": 81.96246919233461,
+      "proof_bytes": 128,
+      "pk_disk_bytes": 639901,
+      "heap_alloc_bytes": 11557776,
+      "total_alloc_bytes": 351189840,
+      "num_gc": 118
+    },
+    "DvPInitiator": {
+      "median_solve_ms": 13.373000000000001,
+      "mean_solve_ms": 16.531619999999997,
+      "median_prove_ms": 415.346,
+      "mean_prove_ms": 457.15178,
+      "p95_prove_ms": 717.332,
+      "min_prove_ms": 375.694,
+      "max_prove_ms": 750.231,
+      "std_dev_ms": 93.29204884003566,
+      "proof_bytes": 128,
+      "pk_disk_bytes": 678997,
+      "heap_alloc_bytes": 11449768,
+      "total_alloc_bytes": 512066704,
+      "num_gc": 152
+    },
+    "PrivateMint": {
+      "median_solve_ms": 3.1544999999999996,
+      "mean_solve_ms": 3.6758399999999996,
+      "median_prove_ms": 115.523,
+      "mean_prove_ms": 132.38592,
+      "p95_prove_ms": 217.314,
+      "min_prove_ms": 81.973,
+      "max_prove_ms": 239.207,
+      "std_dev_ms": 41.319012319676766,
+      "proof_bytes": 128,
+      "pk_disk_bytes": 145189,
+      "heap_alloc_bytes": 4364240,
+      "total_alloc_bytes": 196827720,
+      "num_gc": 85
+    }
+  }
+}
