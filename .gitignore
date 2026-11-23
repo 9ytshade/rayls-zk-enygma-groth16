@@ -6,6 +6,6 @@ out/
 broadcast/
 *.log
 
-# Large uncompressed video files (>50MB) and raw capture drafts
-assets/final demo.mp4
-assets/screen record.mp4
+# Video recordings kept local only
+*.mp4
+assets/*.mp4

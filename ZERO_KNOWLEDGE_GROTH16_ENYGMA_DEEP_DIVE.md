@@ -8,7 +8,7 @@
 > **Target Audience:** Enterprise Blockchain Architects, Central Bank Digital Currency (CBDC) Engineers, Cryptographic Auditors  
 > **Empirical Datasets:** [circuit_constraints.json](file:///C:/Users/9ytshade/Desktop/Rayls/Week_9_Zero_Knowledge_Groth16_Enygma/data/circuit_constraints.json) | [groth16_physical_benchmark.json](file:///C:/Users/9ytshade/Desktop/Rayls/Week_9_Zero_Knowledge_Groth16_Enygma/data/groth16_physical_benchmark.json) | [mainnet_72957_telemetry.json](file:///C:/Users/9ytshade/Desktop/Rayls/Week_9_Zero_Knowledge_Groth16_Enygma/data/mainnet_72957_telemetry.json) | [onchain_fork_measured_gas.json](file:///C:/Users/9ytshade/Desktop/Rayls/Week_9_Zero_Knowledge_Groth16_Enygma/data/onchain_fork_measured_gas.json)  
 > **Repository:** `9ytshade/rayls-zk-enygma-groth16`  
-> **Demonstration Video:** [assets/terminal_demo_showcase.mp4](assets/terminal_demo_showcase.mp4) (Complete 6-Stage Reproduction Showcase)  
+> **Reproduction Showcase:** Executed via `scripts/record_demo_showcase.sh` (6-Stage Terminal Demonstration)  
 > **Commit Hash:** Pinned Upstream Rayls Enygma SHA `a9b06c00cc4076b035c2d9afd5e2ca70b7eae194`  
 
 ---

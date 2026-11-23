@@ -133,7 +133,7 @@ In this investigation, I evaluated the mathematical and operational feasibility 
 
 **Artifacts & Reproducibility:**
 - Technical Monograph & Hardware Setup Guide: `ZERO_KNOWLEDGE_GROTH16_ENYGMA_DEEP_DIVE.md`
-- Terminal Demonstration Video: `assets/terminal_demo_showcase.mp4` (Complete 6-Stage End-to-End Showcase)
+- Terminal Demonstration Showcase: `./scripts/record_demo_showcase.sh` (Complete 6-Stage End-to-End Showcase)
 - Visual Asset Suite (8 Assets, Noir Ventures Palette): Cover Image + Diagrams 1 through 7 in `assets/`
 - Automated Dataset Gatekeeper: `python scripts/verify_datasets.py` (Exit Code 0 across all 4 gates)
 - Modular Reproduction Runner: `./scripts/run_research_stage.sh [1-6|all]` and `./scripts/record_demo_showcase.sh`

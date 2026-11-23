@@ -11,7 +11,7 @@
 An empirical investigation of the zero-knowledge proving system powering **Rayls Enygma**, the privacy layer for tokenized banking and Delivery-versus-Payment (DvP) settlement on Rayls Sovereign subnets. This repository contains reproducible Go gnark benchmarking suites, Three-State invariant testbenches, live Mainnet (Chain ID 72957) telemetry datasets, EVM pairing precompile gas forensics, and the complete institutional research monograph.
 
 **Master Technical Monograph:** [ZERO_KNOWLEDGE_GROTH16_ENYGMA_DEEP_DIVE.md](ZERO_KNOWLEDGE_GROTH16_ENYGMA_DEEP_DIVE.md)  
-**Terminal Demonstration Video:** [assets/terminal_demo_showcase.mp4](assets/terminal_demo_showcase.mp4) (Complete 6-Stage End-to-End Verification Video)  
+**Terminal Demonstration Showcase:** Executed via [`scripts/record_demo_showcase.sh`](scripts/record_demo_showcase.sh) (6-Stage Verification Runner)  
 **Visual Asset Suite:** 8 Brand-Compliant Visual Artifacts in [`assets/`](assets/)  
 **Cross-Post Package:** [CROSS_POST_SUMMARY.md](CROSS_POST_SUMMARY.md) (X/Twitter Thread, Quote-Tweet & Discord Template)
 

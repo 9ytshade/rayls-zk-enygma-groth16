@@ -88,9 +88,9 @@ cid = int(q('eth_chainId'), 16)
 tip = int(q('eth_blockNumber'), 16)
 fin = int(q('eth_getBlockByNumber', ['finalized', False])['number'], 16)
 gp = int(q('eth_gasPrice'), 16) / 1e9
-cr_code = len(q('eth_getCode', ['0x07E17e17e17e17e17e17e17e17e17e17e17e17e1', 'latest'])) // 2
-fa_code = len(q('eth_getCode', ['0x07E17e17e17e17e17e17e17e17e17e17e17e17e3', 'latest'])) // 2
-dp_code = len(q('eth_getCode', ['0x07e17e17e17e17e17e17e17e17E17e17e17e17e9', 'latest'])) // 2
+cr_code = (len(q('eth_getCode', ['0x07E17e17e17e17e17e17e17e17e17e17e17e17e1', 'latest'])) - 2) // 2
+fa_code = (len(q('eth_getCode', ['0x07E17e17e17e17e17e17e17e17e17e17e17e17e3', 'latest'])) - 2) // 2
+dp_code = (len(q('eth_getCode', ['0x07e17e17e17e17e17e17e17e17E17e17e17e17e9', 'latest'])) - 2) // 2
 print(f'  Target Public RPC   : {url}')
 print(f'  Network Identity    : Chain ID {cid} (Rayls Public Chain Mainnet)')
 print(f'  Canonical Block Tip : #{tip:,} | Finalized Tip: #{fin:,} (Observed Lag: {tip - fin} blocks)')
