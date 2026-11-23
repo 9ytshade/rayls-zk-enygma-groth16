@@ -478,13 +478,17 @@ In conclusion, Rayls Enygma Groth16 proving achieves the mathematical efficiency
 
 ## 13. References & Official Sources
 
-1. **CPMI-IOSCO:** *Principles for Financial Market Infrastructures (PFMI)*, Principle 8 (Settlement Finality) & Principle 12 (Exchange-of-Value Settlement Systems).
-2. **Banco Central do Brasil (BCB):** *Piloto Drex: Diretrizes de Privacidade e Testes de Liquidação Interbancária*, 2023-2024.
-3. **Groth, Jens:** *On the Size of Pairing-based Non-interactive Arguments*, Advances in Cryptology - EUROCRYPT 2016.
-4. **Grassi et al.:** *Poseidon: A New Hash Function for Zero-Knowledge Proof Systems*, USENIX Security Symposium 2021.
-5. **Ethereum Improvement Proposals:**
-   - EIP-196: *Precompiled contracts for addition and scalar multiplication on the elliptic curve alt_bn128*.
-   - EIP-197: *Precompiled contracts for optimal ate pairing check on the elliptic curve alt_bn128*.
-   - EIP-2028: *Transaction data gas cost reduction*.
-6. **Consensys gnark:** *Fast Zero-Knowledge Proof Library in Go*, GitHub: `consensys/gnark`.
-7. **Rayls Protocol Documentation:** *Rayls Whitepaper & Enygma Privacy Framework*, `https://docs.rayls.com`.
+1. **CPMI-IOSCO:** *Principles for Financial Market Infrastructures (PFMI)*, Principle 8 (Settlement Finality) & Principle 12 (Exchange-of-Value Settlement Systems). Bank for International Settlements (BIS), [https://www.bis.org/cpmi/publ/d101a.pdf](https://www.bis.org/cpmi/publ/d101a.pdf).
+2. **Banco Central do Brasil (BCB):** *Piloto Drex: Diretrizes de Privacidade e Testes de Liquidação Interbancária*, 2023-2024. [https://www.bcb.gov.br/estabilidadefinanceira/drex](https://www.bcb.gov.br/estabilidadefinanceira/drex).
+3. **Groth, Jens:** *On the Size of Pairing-based Non-interactive Arguments*, Advances in Cryptology - EUROCRYPT 2016. International Association for Cryptologic Research (IACR), [https://eprint.iacr.org/2016/260.pdf](https://eprint.iacr.org/2016/260.pdf).
+4. **Grassi, L., Khovratovich, D., Rechberger, C., Roy, P., & Schofnegger, M.:** *Poseidon: A New Hash Function for Zero-Knowledge Proof Systems*, USENIX Security Symposium 2021. [https://eprint.iacr.org/2019/458.pdf](https://eprint.iacr.org/2019/458.pdf).
+5. **Ethereum Improvement Proposals (EIPs):**
+   - EIP-196: *Precompiled contracts for addition and scalar multiplication on the elliptic curve alt_bn128*. [https://eips.ethereum.org/EIPS/eip-196](https://eips.ethereum.org/EIPS/eip-196).
+   - EIP-197: *Precompiled contracts for optimal ate pairing check on the elliptic curve alt_bn128*. [https://eips.ethereum.org/EIPS/eip-197](https://eips.ethereum.org/EIPS/eip-197).
+   - EIP-2028: *Transaction data gas cost reduction*. [https://eips.ethereum.org/EIPS/eip-2028](https://eips.ethereum.org/EIPS/eip-2028).
+6. **Consensys gnark:** *Fast Zero-Knowledge Proof Library in Go*, GitHub Repository: [https://github.com/Consensys/gnark](https://github.com/Consensys/gnark).
+7. **Rayls Protocol & Enygma Framework:**
+   - Rayls Technical Documentation: [https://docs.rayls.com](https://docs.rayls.com).
+   - Rayls Enygma Open-Source Source Code (Pinned SHA `a9b06c00`): [https://github.com/raylsnetwork/Enygma](https://github.com/raylsnetwork/Enygma).
+   - Rayls Public Chain L1 Explorer: [https://explorer.rayls.com](https://explorer.rayls.com).
+8. **Presidência da República do Brasil:** *Lei Complementar nº 105, de 10 de janeiro de 2001 (Sigilo Bancário)*. [https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp105.htm](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp105.htm).
